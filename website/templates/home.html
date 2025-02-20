@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'website/home.css' %}">
+
+<h1>Welcome to the Job Market Analysis and Recommendation System</h1>
+
+<div class="hero-section">
+    <p>Get personalized job recommendations based on your skills and preferences.</p>
+    <a href="{% url 'profile' %}" class="btn">Update Your Profile</a>
+</div>
+
+<h2>Recommended Jobs for You</h2>
+<div class="recommendation-box">
+    {% if recommended_jobs %}
+        <ul class="job-list">
+            {% for job in recommended_jobs %}
+                <li class="job-item">
+                    <h3>{{ job.job }}</h3>
+                    <p><strong>Company:</strong> {{ job.company_name }}</p>
+                    <p><strong>Location:</strong> {{ job.location }}</p>
+                    <p><strong>Work Type:</strong> {{ job.work_type }}</p>
+                    <p>{{ job.job_details|truncatewords:20 }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No recommendations available yet. Update your profile to see personalized job suggestions.</p>
+    {% endif %}
+</div>
+{% endblock %}

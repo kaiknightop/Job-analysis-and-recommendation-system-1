@@ -1,0 +1,55 @@
+/* static/css/home.css */
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+.hero-section p {
+    font-size: 18px;
+    color: #555;
+}
+.hero-section a {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.hero-section a:hover {
+    background-color: #0056b3;
+}
+
+.hero-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.recommendation-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-list {
+    list-style: none;
+    padding: 0;
+}
+
+.job-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
