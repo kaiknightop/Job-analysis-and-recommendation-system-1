@@ -1,3 +1,3 @@
-# Job-analysis-and-recommendation-system-1
+# Job-analysis-and-recommendation-system-1 (Using raw data)
 My job market analysis and recommendation system aims to address the issues with existing systems by providing job seekers with personalized or tailored job recommendations based on their user profile with the help of a hybrid recommendation system containing content based and collaborative filtering. (Incomplete)
 The system is supposed to be able to provide tailored and personalized job market analysis based on user's profile. I intend to use 2 algorithms, the content based filtering for providing recommendations based on user's profile and the collaborative filtering is providing recommendations based on what similar users found interesting or useful. The current system only has content based filtering and i used an indian job csv file that i personally cleaned myself. This version will be updated to fully meets the requirements needed.
